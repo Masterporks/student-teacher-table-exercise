@@ -1,0 +1,10 @@
+table, th, td {
+  border: 2px groove #888888;
+  border-collapse: collapse;
+  text-align: center;
+
+}
+
+id{
+  align-items: center;
+}

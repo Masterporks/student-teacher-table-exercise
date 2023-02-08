@@ -1,0 +1,25 @@
+<h2>{{studentTitle}}</h2>
+<table>
+  <thead>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Age</th>
+    <th>Address</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let student of students">
+    <td>{{student.firstName}}</td>
+    <td>{{student.lastName}}</td>
+    <td>{{student.age}}</td>
+    <td>{{student.address}}</td>
+    <td>{{student.email}}</td>
+  </tr>
+
+  <button id="button" class="card card-small" (click)="addStudent()">Add Random Student</button>
+
+  </tbody>
+</table>
+
