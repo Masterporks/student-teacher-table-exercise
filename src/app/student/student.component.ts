@@ -14,6 +14,7 @@ export class StudentComponent implements OnInit {
   @Input() sAges: number[] = [13, 16, 18];
   @Input() sAddresses: string[] = ['Narva', 'Viljandi', 'Finland'];
   @Input() sEmails: string[] = ['looy@gmail.com', 'is@mail.ee', 'rand@gmail.com'];
+  isShowFormTeacher: boolean = false;
   ngOnInit(): void {
     this.students = this.getStudents();
   }

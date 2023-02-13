@@ -3,8 +3,7 @@
     all: unset;
     border-radius: 4px;
     border: 1px solid #eee;
-    background-color: lightgreen;
-
+    background-color: #fafafa;
     height: 40px;
     width: 200px;
     margin: 0 8px 16px;
@@ -26,7 +25,7 @@
     height: 16px;
     width: 168px;
     position: center;
-    margin-left: 90px;
+    margin-left: 70px;
   }
 
 
@@ -50,13 +49,14 @@
     <td>{{teacher.address}}</td>
     <td>{{teacher.email}}</td>
   </tr>
-  <td colspan="5" style="text-align: center;">
-    <div>
-      <button class="card card-small" (click)="addTeacher()">Add Random Teacher</button>
-    </div>
-  </td>
+
+
+
+
+
   </tbody>
 </table>
+<button class="card card-small" (click)="addTeacher()" *ngIf="isShowForm">Add Random Teacher</button>
 <br>
 <br>
-
+<app-teacher-form></app-teacher-form>

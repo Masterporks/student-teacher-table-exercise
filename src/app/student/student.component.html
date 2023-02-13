@@ -59,13 +59,14 @@
     <td>{{student.email}}</td>
 
   </tr>
-  <td colspan="5" style="text-align: center;">
-    <div>
-      <button class="card card-small" (click)="addStudent()">Add Random Student</button>
-    </div>
-  </td>
+
+
+
 
   </tbody>
 
 </table>
+<button class="card card-small" (click)="addStudent()" *ngIf="isShowFormTeacher">Add Random Student</button>
 
+
+<app-student-form></app-student-form>
